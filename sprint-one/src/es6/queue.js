@@ -4,6 +4,10 @@ class Queue {
     this.head = 0;
     this.tail = 0;
   }
+  enqueue(value) {
+    let keys = Object.keys(this.storage);
+    let last = keys[keys.length - 1];
+  }
 
   enqueue(value) {
     this.storage[this.tail] = value;
@@ -23,3 +27,4 @@ class Queue {
     return this.tail - this.head;
   }
 }
+const queue1 = new Queue();
